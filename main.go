@@ -7,7 +7,12 @@ import (
 
 	// Plugins
 	_ "github.com/lucaslorentz/caddy-docker-proxy/plugin"
-
+	- "github.com/linkonoid/caddy-dyndns"
+	- "github.com/captncraig/cors"
+	- "github.com/BTBurke/caddy-jwt"
+	- "github.com/tarent/loginsrv/tree/master/caddy"
+	- "github.com/mastercactapus/caddy-proxyprotocol"
+	
 	// DNS Providers
 	_ "github.com/caddyserver/dnsproviders/azure"
 	_ "github.com/caddyserver/dnsproviders/cloudflare"
